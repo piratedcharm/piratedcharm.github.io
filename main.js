@@ -200,7 +200,7 @@ function ProgressBar(container, checkboxes) {
 
   const progressPercentage = (checkedCount / checkboxes.length) * 100;
 
-  progressBar.style.background = `linear-gradient(to right, #27374D ${progressPercentage}%, #d6d6d6 ${progressPercentage}% 100%)`;
+  progressBar.style.background = `linear-gradient(to right, #3D6090 ${progressPercentage}%, #d6d6d6 ${progressPercentage}% 100%)`;
   container.appendChild(progressBar);
 }
 
@@ -215,7 +215,7 @@ function ProgressBar2(container, checkboxes) {
 
   const progressPercentage = (checkedCount / checkboxes.length) * 100;
 
-  progressBar2.style.background = `conic-gradient(#27374D ${progressPercentage}%, #d6d6d6 ${progressPercentage}% 100%)`;
+  progressBar2.style.background = `conic-gradient(#3D6090 ${progressPercentage}%, #d6d6d6 ${progressPercentage}% 100%)`;
   container.appendChild(progressBar2);
 }
 
