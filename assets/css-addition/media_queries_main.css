@@ -1,0 +1,124 @@
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    
+    .navbar{
+        flex-wrap: nowrap;
+    }
+
+    .nav-links a{
+        display: block;
+        margin: px 0;
+        margin-left: 0;
+      }
+
+    #menu-icon{
+        display: block;
+        
+      }
+
+    .btn-addtask {
+        margin-left: 0;
+    }
+
+    .frame{
+        margin: 0;
+        padding: 0;
+    }
+
+    .taskarea, .taskarea-checklist, .taskarea-streak{
+        margin-left: 0;
+    }
+
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+   
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    #menu-icon{
+        display: block;
+        padding-right: 20px;
+      }
+    
+      .nav-links{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 30vh;
+        background-color: #27374D;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding:55px 10px;
+        transition: all .55s ease;
+    
+      }
+    
+      .nav-links a{
+        display: block;
+        margin: 10px 0;
+        margin-left: 0;
+      }
+
+      .nav-links.open{
+        right: 0;
+      }
+    
+      .navbar{
+        display: flex;
+      }
+    
+      .navbar .logo {
+        margin-left: 0px;
+      }
+
+    .frame{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+    .taskarea{
+        width: 810px;
+    }
+
+    .taskarea-checklist{
+        width: 810px;
+    }
+
+    .popup{
+        width: 100%;
+        height: 100%;
+    }
+      
+      .hiddentext3 img{
+      width: 21%;
+      display: block;
+      margin: auto;
+      opacity: 0.4;
+      }
+    
+
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+}
+
+/* // XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */

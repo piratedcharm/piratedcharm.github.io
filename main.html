@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./assets/img/headlogo.png">
+    <link rel="shortcut icon" type="png" href="./assets/img/headlogo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebits | Note your habits</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css-addition/media_queries_main.css">
+
+    <!-- boxicons link -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="navbar">
+        <a href="#" class="logo">
+            <img src="./assets/img/gepeng/navlogoW.png" alt="Logo Notebits" style="width: 35%;">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="main.html">Task</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon">
+      </div>
+    </nav>
+</header>
+
+    <div class="container">
+    <div class="tasknavigation">
+        <button id="openPopupButton" class="btn-addtask">
+            <span class="btn-addtask-transition"></span>
+            <span class="btn-addtask-gradient"></span>
+            <span class="btn-addtask-label">+ Add Task</span>
+        </button>
+
+        <div id="popupForm" class="popup">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <form id="form">
+                <h2>Create Habit</h2>
+                <label for="title">Title:</label>
+                <input type="text" id="title" placeholder="Input Your Habit" required>
+                <br>
+                <label for="note">Note:</label>
+                <textarea id="note" placeholder="Input Description of Your Habit" required></textarea>
+                <br>
+                <button type="submit" value="Submit">Create</button>
+              </form>
+            </div>
+          </div>
+    </div>
+ <h3 >
+    <div class="frame">
+        <div class="taskarea">
+            <p class="frameheader" >Your Habits</p>
+
+            <div id="cardContainer"></div>
+            <div id="ht1" class="hiddentext">
+                <img src="./assets/icon/lifestyle.png" alt="lifestyle">
+                <p><b>These are your Habits.</b><br>
+                    Habits don't have a rigid schedule. You can check them off multiple times per day.</p>
+            </div>
+        </div>
+        <div class="taskarea-checklist">
+            <p class="frameheader" >Daily Checklist</p>
+            <div id="taskarea-checklist"></div>
+
+            <div id="ht2" class="hiddentext2">
+                <img src="./assets/icon/calendar.png" alt="lifestyle">
+                <p><b>These are your Daily Tracker.</b><br>
+                    If you have done it today, you can check it here</p>
+            </div>
+        </div>
+        <div class="taskarea-streak">
+            <p class="frameheader" >Weekly Streak</p>
+
+            <div id="taskarea-streak"></div>
+
+
+            <div id="ht3" class="hiddentext3">
+              <img src="./assets/icon/changes.png" alt="lifestyle">
+              <p><b>This is a summary of your weekly habits.</b><br>
+                You can see how many days you successfully completed this task.</p>
+        </div>
+        
+    </div>
+
+  </div>
+
+</div>
+
+  <footer>
+    <div class="footer">
+    <p>This application dedicated for our last project together as Team 12 Khatulistiwa in RevoU.<br>
+      Copyright © 2023 Team 12 Khatulistiwa</p>
+    </div>
+  </footer>
+
+    
+
+  <!-- chart -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+
+<!-- Javascript -->
+<script src="main.js"></script>
+
+</html>
